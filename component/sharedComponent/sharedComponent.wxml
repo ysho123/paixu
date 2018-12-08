@@ -1,0 +1,5 @@
+<!--component/sharedComponent/sharedComponent.wxml-->
+<view class='wrapper'>
+  <image src='{{picSrc}}' class='shareImage' bindtap='showPic'></image>
+  <button bindtap='closeComponent' class='button' hover-class='btn_active'></button>
+</view>

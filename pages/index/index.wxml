@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class='mainWrapper'>
+  <view class='upArea'>
+    <image src='../../images/index/title.png' class='index_title'></image>
+  </view>
+
+  <view class='middleArea'>
+    <view class='middle_container'>
+      <view class='hint' hover-class='btn_active' hover-stay-time='100' bindtap='showHint'></view>  
+      <view class='middle_input'>
+        <image src='../../images/index/titleWord.png' class='zhuti'></image>
+        <input class='shurukuang' value='{{inputContent}}' bindinput='inputWord'></input>
+      </view>
+      <view class='middle_join'>
+        <image src='../../images/index/joinManWord.png' class='canyurenshu'></image>
+        <view class='countArea'>
+          <view class='countArea_minus' data-id='join' hover-class='fuhao_active' hover-stay-time='100' bindtap='minusNum'></view>   
+          <input class='peopleNum' data-id='join' type='number' value='{{joinNum}}' bindinput='inputNum'></input>
+          <view class='countArea_add' data-id='join' hover-class='fuhao_active' hover-stay-time='100' bindtap='addNum'></view>
+        </view>
+      </view>
+      <!-- <view class='middle_join'>
+        <image src='../../images/index/fzzs.png' class='fzzs'></image>
+        <view class='countArea'>
+          <view class='countArea_minus' data-id='choose' hover-class='fuhao_active' hover-stay-time='100' bindtap='minusNum'></view>  
+          <input class='peopleNum' data-id='choose' type='number' value='{{chooseNum}}' bindinput='inputNum'></input>
+          <view class='countArea_add' data-id='choose' hover-class='fuhao_active' hover-stay-time='100' bindtap='addNum'></view>
+        </view>
+      </view> -->
+    </view>
+    <button wx:if='{{needLog}}' class='middle_submitBtn' hover-class='btn_active' open-type='getUserInfo' bindgetuserinfo='getUserInfo' 
+    ></button>
+    <button wx:else class='middle_submitBtn' hover-class='btn_active'  bindtap="submit"></button>
+  </view>
+
+  <view class='bottomArea'>
+  
+  </view>
+</view>
+
+<view class='hintWrapper' wx:if='{{hintShow}}'>
+  <view class="'hintContainer' {{hintShow ? 'hintContainer_show' : ''}}">
+    <image src='../../images/hint/close.png' class='hint_close' bindtap='closeHint'></image>
+    <image src='../../images/hint/content.png' class='hint_content'></image>
+  </view>
+</view>
+
+<view class='adArea'></view>

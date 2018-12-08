@@ -1,0 +1,125 @@
+.mainWrapper{
+  width: 100%;
+  height: 100%;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/index/bg.png');
+  background-size:750rpx 1334rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.upArea{
+  width: 100%;
+  height: 15%;
+  /* background-color: red;
+  opacity: 0.4; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.index_title{
+  width: 536rpx;
+  height: 95rpx;
+}
+
+.middleArea{
+  width: 100%;
+  height: 65%;
+  /* background-color: green; */
+  /* opacity: 0.4;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.middle_container{
+  width: 547rpx;
+  height: 472rpx;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/goPage/shareContainer.png');
+  background-size:547rpx 472rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.questionTitle{
+  margin-bottom: 60rpx;
+  letter-spacing: 5rpx;
+  font-family: "黑体";
+  font-weight: bold;
+  color: #000;
+  width:80%;
+  text-align : center;
+}
+
+.clickBtn{
+  width: 180rpx;
+  height: 180rpx;
+  background-image: url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/paixu/goPage/clickBtn.png');
+  background-size: 180rpx 180rpx;
+  background-repeat :no-repeat;
+  background-position : center;
+  background-color: transparent;
+}
+
+.clickBtn::after{
+  border: none; 
+}
+
+.middleShareArea{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.middle_shareBtn1{
+  width: 268rpx;
+  height:90rpx;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/goPage/shareToFriend.png');
+  background-color: transparent;
+  background-size:268rpx 90rpx;
+  margin-top: 10rpx;
+}
+
+.middle_shareBtn2{
+  width: 268rpx;
+  height:90rpx;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/goPage/shareToCircle.png');
+  background-color: transparent;
+  background-size:268rpx 90rpx;
+  margin-top: 10rpx;
+}
+
+.btn_active{
+  transform: scale(1.1);
+}
+
+.middle_hit{
+  width: 531rpx;
+  height: 48rpx;
+}
+
+.backIndex{
+  width: 182rpx;
+  height: 171rpx;
+  background-image: url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/goPage/indexBtn.png');
+  background-size: 182rpx 171rpx;
+  background-repeat :no-repeat;
+  background-position : center;
+  position: absolute;
+  right: -30rpx;
+  top: -30rpx;
+}
+
+.bottomArea{
+  width: 100%;
+  height: 20%;
+  /* background-color: yellow; */
+  opacity: 0.4;
+}

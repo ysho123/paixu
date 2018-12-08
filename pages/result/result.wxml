@@ -1,0 +1,43 @@
+<view class='mainWrapper'>
+  <view class='upArea'>
+    <image src='../../images/index/title.png' class='index_title'></image>
+  </view>
+
+  <view class='middleArea'>
+    <view class='middle_container'>
+        <view class='backIndex' hover-class='btn_active' hover-stay-time='100' bindtap='backIndex'></view>
+        <view class='checkAgain' hover-class='btn_active' hover-stay-time='100' bindtap='backIndex'></view>
+
+        <view class='middle_wordInfo'>
+          <view class='middle_title'>{{ac_Name}}</view>
+          <!-- <image class="{{mySelfInfo.isLuckyMan ? 'middle_title_Catched' : 'middle_title_noCatched'}}" src="{{mySelfInfo.isLuckyMan ? '../../images/result/beCatched.png' : '../../images/result/notBeCatched.png'}}"></image> -->
+          <view class='middle_text'>共{{topInfo.total}}人,还有{{topInfo.unJoin}}人没有加入</view>
+        </view>
+        <scroll-view class='middle_userList' scroll-y='1' >
+            <view class='userItem' wx:for='{{listInfo}}' wx:key='1'>
+              <image class='avatar' src='{{item.headimgurl}}'></image>
+              <view class='wordInfo'>
+                <view class='user_nickName'>{{item.nickname}}</view>
+                <view class='user_time'>{{item.create_time}}</view>
+              </view>
+              <view class='user_index'>{{item.capital}}</view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <view class='refresh' hover-class='btn_active' hover-stay-time='100' bindtap='refresh'>刷新结果</view>
+
+    <view class='middleShareArea'>
+        <button class='middle_shareBtn2' hover-class='btn_active' bindtap='getShareImage' wx:if='{{!shenhe}}'></button>
+        <button class='middle_shareBtn1' hover-class='btn_active' open-type='share'></button>
+    </view>
+  </view>
+
+  <view class='bottomArea'>
+
+  </view>
+
+  <!-- 生成分享图组件 -->
+  <sharedComponent class='sharePicArea' wx:if='{{showSharedPic}}' ac_id='{{ac_id}}' ac_Name='{{ac_Name}}'  bind:closeComponent="closeComponent"></sharedComponent>
+
+</view>

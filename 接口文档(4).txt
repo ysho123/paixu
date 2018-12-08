@@ -1,0 +1,47 @@
+1.分组获取code
+
+https://xcx.xc29.cn/source/plugin/sort/getCode.php?code=?						GET请求
+
+
+
+2.保存用户信息接口
+
+https://xcx.xc29.cn/source/plugin/sort/saveUserInfo.php?openid=?&nickname=?&imageurl=?			GET请求
+
+
+3.检查用户有没有头像昵称
+
+https://xcx.xc29.cn/source/plugin/sort/checkUserInfo.php?openid=?					GET请求
+
+
+4.创建接口
+
+https://xcx.xc29.cn/source/plugin/sort/createSortActive.php?openid=?&title=?&total=?&nickname=?&headimgurl=?	GET请求
+
+
+
+5.判断用户是否参与过这个项目
+
+https://xcx.xc29.cn/source/plugin/sort/checkUserJoinActive.php?openid=?&aid=?				GET请求
+
+
+
+6.用户触发分组
+
+https://xcx.xc29.cn/source/plugin/fenzu/joinSort.php?openid=?&nickname=?&headimgurl=?&aid=?		GET请求
+
+
+
+7.获取结果
+
+https://xcx.xc29.cn/source/plugin/sort/getActiveSort.php?openid=?&headimgurl=?&aid=?&nickname=???				GET请求
+
+
+8.生成二维码
+
+https://xcx.xc29.cn/source/plugin/sort/getQrcode.php?para=?&title=?&head=?				GET请求		路径需要提前告知后台
+
+
+9.用户获取我的
+
+https://xcx.xc29.cn/source/plugin/sort/getUserJoinActiveList.php?openid=?&type=1				GET请求		
