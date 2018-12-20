@@ -14,6 +14,7 @@ Page({
     shenhe : 0,
     topInfo : {},
     listInfo : [],
+    jumpItem: {},//跳转其他小程序(非分组排序投票)
   },
 
   /**
@@ -21,7 +22,7 @@ Page({
    */
   onLoad: function (options) {
     let { ac_id } = options;
-    let ac_Name = options.ac_Name || '运动会分组呀'
+    let ac_Name = options.ac_Name || '晚会表演节目的顺序'
     this.setData({
       ac_id: ac_id,
       ac_Name: ac_Name
@@ -33,6 +34,27 @@ Page({
     });
 
     this.getResults();
+
+    //获取互跳
+    this.getJumpList();
+  },
+
+  getJumpList() {
+    wxUtils.cloudRequest('getJumpList', {}, (res) => {
+      console.log(res);
+      if (res.result && res.result.length > 0) {
+        setInterval((length) => {
+          let index = parseInt(Math.random() * length);
+          this.setData({
+            jumpItem: res.result[index]
+          });
+        }, 4000, res.result.length);
+      }
+    });
+  },
+
+  jumpSuccess() {
+    APP.aldstat.sendEvent(`互跳${this.data.jumpItem.name}`, { 'time': new Date().getHours().toString() });
   },
 
   getResults(){

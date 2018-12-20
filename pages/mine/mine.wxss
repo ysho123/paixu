@@ -207,3 +207,8 @@ button[plain] {
    margin-top: 206rpx;
 }
 
+.adArea{
+  margin-top:30rpx; 
+  width: 100%;
+  height: 300rpx;
+}

@@ -45,6 +45,24 @@ let wxUtils = {
     })
   },
 
+  cloudRequest(url, data, success = noop, fail = noop, complete = noop) {
+    this.showLoading();
+    wx.cloud.callFunction({
+      name: url,
+      data: data,
+      success: (res) => {
+        success(res);
+      },
+      fail: (err) => {
+        fail(err);
+      },
+      complete: () => {
+        this.hideLoading();
+        complete();
+      }
+    })
+  },
+
   getOpenId(success = noop, fail = noop, complete = noop){
     let openId = wx.getStorageSync('openId');
     if (openId){

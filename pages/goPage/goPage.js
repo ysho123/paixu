@@ -24,7 +24,6 @@ Page({
       shenhe: APP.shenhe
     });
 
-
     // 如果是自己创建的活动，需要分享后才能打开，其他人不用(涉嫌诱导分享，审核阶段)
     if (options.creater && !this.data.shenhe){
       this.setData({

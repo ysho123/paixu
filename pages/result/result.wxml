@@ -7,6 +7,9 @@
     <view class='middle_container'>
         <view class='backIndex' hover-class='btn_active' hover-stay-time='100' bindtap='backIndex'></view>
         <view class='checkAgain' hover-class='btn_active' hover-stay-time='100' bindtap='backIndex'></view>
+        <navigator class='jumpOther_wrapper' target='miniProgram' app-id='{{jumpItem.appid}}' path='{{jumpItem.path}}' bindsuccess='jumpSuccess'>
+          <image class='jumpOther' src='{{jumpItem.imageUrl}}'></image>
+        </navigator> 
 
         <view class='middle_wordInfo'>
           <view class='middle_title'>{{ac_Name}}</view>
@@ -33,8 +36,11 @@
     </view>
   </view>
 
-  <view class='bottomArea'>
+  <!-- 互跳组件 -->
+  <jumpListComponent class='jumpList'></jumpListComponent>
 
+  <view class='bottomArea'>
+      <ad unit-id='adunit-f80b5123f7ad46c5' class='ad'></ad>
   </view>
 
   <!-- 生成分享图组件 -->

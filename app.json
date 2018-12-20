@@ -32,6 +32,19 @@
     ]
   },
   "usingComponents": {
-    "sharedComponent": "component/sharedComponent/sharedComponent"
-  }
+    "sharedComponent": "component/sharedComponent/sharedComponent",
+    "jumpListComponent": "component/jumpList/jumpList"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx3bcc8e38137ed70d",
+    "wx29dad3c781aa8392",
+    "wxfd9e3bfc1c8e7ab0",
+    "wx594916c44759c264",
+    "wx23f8dd2d800bcf42",
+    "wx463953cb83a580ed",
+    "wxf1e4f980142cf270",
+    "wx04a62c15498aafe4",
+    "wx0d5802c080f98e28",
+    "wxe58ba2ac2446b243"
+  ]
 }

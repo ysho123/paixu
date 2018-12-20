@@ -1,0 +1,31 @@
+/* component/jumpList/jumpList.wxss */
+.comp_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  width: 163rpx;
+  height: 36rpx;
+}
+
+.listWrapper{
+  display: flex;
+  align-items: center;
+}
+
+.list_item{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 20rpx;
+  animation: scaleButton 4s linear infinite;
+}
+
+@keyframes scaleButton{
+  0%   {transform: scale(0.9)}
+  25%  {transform: scale(1)}
+  50% {transform: scale(1.1)}
+  75%  {transform: scale(1)}
+  100% {transform: scale(0.9)}
+}

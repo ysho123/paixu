@@ -1,0 +1,18 @@
+<!--component/jumpList/jumpList.wxml-->
+<view class='comp_wrapper'>
+  <image class='title' src='../../images/jumpList/shiyongTools.png'></image>
+  <view class='listWrapper'>
+    <!-- 抓阄 -->
+    <navigator target='miniProgram' app-id='wxfd9e3bfc1c8e7ab0' path='pages/index/index?ald_media_id=7596&ald_link_key=b37db0cd4a797e4e'>
+      <image class='list_item' src='../../images/jumpList/zhuajiu.png'></image>
+    </navigator>
+    <!-- 分组 -->
+    <navigator target='miniProgram' app-id='wx29dad3c781aa8392' path='pages/index/index?ald_media_id=8786&ald_link_key=3f2772a9161ef252'>
+      <image class='list_item' src='../../images/jumpList/fenzu.png'></image>
+    </navigator>
+    <!-- 投票 -->
+    <navigator target='miniProgram' app-id='wx3bcc8e38137ed70d' path='pages/index/index?ald_media_id=8233&ald_link_key=27422d74e1691a75'>
+      <image class='list_item' src='../../images/jumpList/toupiao.png'></image>
+    </navigator>
+  </view>
+</view>
