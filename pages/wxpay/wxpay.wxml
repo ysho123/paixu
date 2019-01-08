@@ -1,0 +1,24 @@
+<!--pages/pay/pay.wxml-->
+<view class="top">
+<form bindsubmit="charge" report-submit="true">
+   		<view class="sec_top">
+   			<view class="sec_top_1" >
+       			<image src="../../images/buy.png" />
+       			<text>解锁查看所有测算结果</text>
+   			</view>
+   			<view class="sec_top_2">
+   				<text class="text_1">订单号</text>
+   				<text class="text_2">{{orderid}}</text>
+   			</view>
+   			<view class="sec_top_3">
+   				<text class="text_1">鉴定价</text>
+   				<text class="text_2">￥{{paymoney}}</text>
+   			</view>
+   		</view>
+   		<!-- <view class="btn" bindtap="charge"> -->
+   			<!-- <text>支付</text>
+   			<text class="text_cash">￥{{paymoney}}</text> -->      
+   		<!-- </view> -->
+       <button class="btn"  form-type='submit'  plain="true" disabled="{{disabled}}" >支付￥{{paymoney}}</button>
+  </form>
+</view>

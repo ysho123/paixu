@@ -1,6 +1,6 @@
 const noop = function(){};
 
-const BASE = "https://xcx.xc29.cn/source/plugin/sort/";
+const BASE = "https://xcx.getboolean.com/source/plugin/sort/";
 const URL = {
   getOpenId: BASE + "getCode.php", //GET请求  code=?	
   saveUserInfo: BASE + "saveUserInfo.php", //GET请求   openid=?&nickname=?&imageurl=?	
